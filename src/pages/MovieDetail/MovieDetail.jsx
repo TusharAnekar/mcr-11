@@ -10,7 +10,6 @@ export function MovieDetail() {
   } = useContext(MoviesContext);
   const movie = movies.find(({ id }) => id === Number(movieId));
   const {
-    id,
     title,
     year,
     genre,
