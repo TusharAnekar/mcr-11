@@ -1,0 +1,13 @@
+.watchlist-container {
+    padding: 1rem;
+}
+
+.watchlist-container h2 {
+    margin-bottom: 1rem;
+}
+
+.watchlist-container .watchlist-movies-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}

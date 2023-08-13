@@ -1,0 +1,20 @@
+.movie-card-container {
+    border: 1px solid gray;
+    width: 250px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
+.movie-card-container img {
+    width: 250px;
+    height: 200px;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.movie-card-container .buttons-container {
+    margin: 0.5rem 0;
+    display: flex;
+    justify-content: space-around;
+}

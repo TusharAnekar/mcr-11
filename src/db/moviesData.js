@@ -139,6 +139,7 @@ export const movies = [
       "https://m.media-amazon.com/images/M/MV5BY2NkZjEzMDgtN2RjYy00YzM1LWI4ZmQtMjIwYjFjNmI3ZGEwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg",
   },
   {
+    id: 11,
     title: "Fellowship of the Ring",
     year: 2001,
     genre: ["Adventure", "Drama", "Fantasy"],

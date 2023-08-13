@@ -1,0 +1,30 @@
+.movie-detail-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.movie-detail-container .movie-detail-card-container{
+    width: 80%;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid gray;
+}
+
+.movie-detail-container img {
+    width: 300px;
+    height: 450px;
+}
+
+.movie-detail-container .genre-content, .cast-content {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.movie-detail-container .buttons-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}

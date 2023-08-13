@@ -1,0 +1,13 @@
+.starred-movies-container {
+    padding: 1rem;
+}
+
+.starred-movies-container h2 {
+    margin-bottom: 1rem;
+}
+
+.starred-movies-container .starred-movies-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
