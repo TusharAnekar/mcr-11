@@ -1,7 +1,9 @@
 import { useContext, useState } from "react";
 import "./addNewMovie.css";
 import { MoviesContext } from "../../contexts/movies-context";
+import { useNavigate } from "react-router-dom";
 export function AddNewMovie() {
+  const navigate = useNavigate()
   const {
     moviesState: { movies }, moviesDisptach
   } = useContext(MoviesContext);
@@ -30,6 +32,7 @@ export function AddNewMovie() {
     e.preventDefault()
     setNewMovieDetails({...newMovieDetails, id: movies?.length + 1})
     moviesDisptach({type: "ADD_MOVIE", payload: newMovieDetails})
+    navigate("/")
   }
 
   return (
