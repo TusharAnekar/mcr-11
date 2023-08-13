@@ -9,7 +9,13 @@ export function MoviesProvider ({children}) {
     const [moviesState, moviesDisptach] = useReducer(moviesReducer, initialMovies)
 
     function getMovies () {
-        moviesDisptach({type: "SET_MOVIES", payload: movies})
+        const data = JSON.parse(localStorage.getItem("moviesLocalStorage"))
+        if(data) {
+            moviesDisptach({type: "SET_MOVIES", payload: data})
+        } else {
+            localStorage.setItem("moviesLocalStorage", JSON.stringify(movies))
+            moviesDisptach({type: "SET_MOVIES", payload: data})
+        }
     }
 
     useEffect(() => {

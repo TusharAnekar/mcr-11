@@ -31,6 +31,7 @@ export function AddNewMovie() {
   function handleSubmit(e) {
     e.preventDefault()
     setNewMovieDetails({...newMovieDetails, id: movies?.length + 1})
+    localStorage.setItem("moviesLocalStorage", JSON.stringify([...movies, newMovieDetails]))
     moviesDisptach({type: "ADD_MOVIE", payload: newMovieDetails})
     navigate("/")
   }
