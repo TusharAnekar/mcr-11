@@ -24,7 +24,7 @@ export function Home() {
         <h3>Movies</h3>
 
         <select name="genre" onChange={handleSelect}>
-          <option value="All">All Genres</option>
+          <option value={0}>All Genres</option>
           {allGenres?.map((genre, index) => (
             <option key={index} value={genre}>
               {genre}

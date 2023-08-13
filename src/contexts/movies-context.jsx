@@ -38,7 +38,7 @@ export function MoviesProvider ({children}) {
 
     const yearFilteredMovies = Number(moviesState?.yearFilter) ? genreFilteredMovies?.filter(({year}) => year === Number(moviesState?.yearFilter)) : genreFilteredMovies
 
-    const ratingFilteredMovies = Number(moviesState?.ratingFilter) ? yearFilteredMovies?.filter(({rating}) => rating === Number(moviesState?.ratingFilter)) : genreFilteredMovies
+    const ratingFilteredMovies = Number(moviesState?.ratingFilter) ? yearFilteredMovies?.filter(({rating}) => rating === Number(moviesState?.ratingFilter)) : yearFilteredMovies
 
     const getIsMovieInWatchlist = (movieId) => moviesState?.watchList?.some(({id}) => id === movieId)
 
