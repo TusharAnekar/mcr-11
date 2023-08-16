@@ -12,7 +12,7 @@ export function MovieDetail() {
     getIsMovieInStarredMovies,
   } = useContext(MoviesContext);
   console.log(movies)
-  const movie = movies?.find(({ id }) => id == movieId);
+  const movie = movies?.find(({ id }) => id === Number(movieId));
   const {
     id,
     title,
