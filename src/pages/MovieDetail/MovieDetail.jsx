@@ -11,7 +11,8 @@ export function MovieDetail() {
     getIsMovieInWatchlist,
     getIsMovieInStarredMovies,
   } = useContext(MoviesContext);
-  const movie = movies.find(({ id }) => id === Number(movieId));
+  console.log(movies)
+  const movie = movies?.find(({ id }) => id == movieId);
   const {
     id,
     title,

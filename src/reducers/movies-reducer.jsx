@@ -1,5 +1,7 @@
+import { movies } from "../db/moviesData"
+
 export const initialMovies = {
-    movies: [],
+    movies: movies,
     inputSearch: "",
     genreFilter: "All",
     yearFilter: 0,
